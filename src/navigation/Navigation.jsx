@@ -13,7 +13,7 @@ const Navigation = () => {
         <Tab.Navigator>
 
             <Tab.Screen
-                name="Favorites"
+                name="Fav"
                 component={FavoritesNavigation}
                 options={{
                     tabBarIcon: ({ color, size }) => (
@@ -22,7 +22,7 @@ const Navigation = () => {
                 }}
             />
             <Tab.Screen
-                name="Pokedex"
+                name="Pdex"
                 component={PokedexNavigation}
                 options={{
                     tabBarLabel: "Pokedex",    //Just render the pokeball, not text
@@ -30,7 +30,7 @@ const Navigation = () => {
                 }}
             />
             <Tab.Screen
-                name="Account"
+                name="Acco"
                 component={AccountNavigation}
                 options={{
                     tabBarLabel: "Cuenta",
