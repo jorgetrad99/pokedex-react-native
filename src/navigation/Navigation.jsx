@@ -25,6 +25,8 @@ const Navigation = () => {
                 name="Pdex"
                 component={PokedexNavigation}
                 options={{
+                    title: '',
+                    headerTransparent: true,
                     tabBarLabel: "Pokedex",    //Just render the pokeball, not text
                     tabBarIcon: () => renderPokeball(),
                 }}
