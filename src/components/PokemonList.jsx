@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, StyleSheet, Text, FlatList } from 'react-native';
+import { StyleSheet, Text, FlatList } from 'react-native';
+import PokemonCard from './PokemonCard';
 
 const PokemonList = (props) => {
     const { pokemons } = props;
@@ -9,7 +10,7 @@ const PokemonList = (props) => {
             numColumns={2}
             showsVerticalScrollIndicator={false}
             keyExtractor={(pokemon) => String(pokemon.id)}
-            renderItem={({ item }) => <Text>{item.name}</Text>}
+            renderItem={({ item }) => <PokemonCard pokemon={item} />}
             contentContainerStyle={styles.FlatListContentContainer}
         />
     );
