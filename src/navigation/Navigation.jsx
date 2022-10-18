@@ -10,8 +10,11 @@ const Tab = createBottomTabNavigator();
 
 const Navigation = () => {
     return (
-        <Tab.Navigator>
-
+        <Tab.Navigator
+            screenOptions={{
+                headerShown: false,
+            }}
+        >
             <Tab.Screen
                 name="Fav"
                 component={FavoritesNavigation}
